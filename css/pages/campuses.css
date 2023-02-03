@@ -1,8 +1,8 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
-  padding: 16px;
+  gap: 8px;
+  padding: 8px;
   flex-grow: 1;
 }
 
@@ -13,12 +13,18 @@
 #map {
   height: 100vh;
   position: sticky;
-  top: 16px;
+  top: -40px;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 700px) {
   .cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
